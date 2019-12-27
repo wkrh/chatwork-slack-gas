@@ -27,7 +27,7 @@ interface ChatworkRoom {
     description: string;
 }
 
-const scriptProperties = PropertiesService.getScr3iptProperties();
+const scriptProperties = PropertiesService.getScriptProperties();
 
 function main () {
     const rooms: Partial<ChatworkRoom>[] = JSON.parse(scriptProperties.getProperty('rooms'));
